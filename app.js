@@ -6,10 +6,12 @@ var express = require('express'),
 
 var app = express();
 
-app.set('port', settings.port)
+app.set('port', settings.port);
+// use dev to get the nice colored styling for http requests
+app.use(express.logger('dev'));
 
 app.get('/', function(req, res) {
-  res.send('welcome to wampum');
+  res.sen('welcome to wampum');
 });
 
 http.createServer(app).listen(app.get('port'), function() {
