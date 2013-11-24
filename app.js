@@ -6,9 +6,14 @@ var express = require('express'),
   settings = require('config'),
   ui = require('./lib/routes/ui');
 
+var env = process.env.NODE_ENV || 'development';
 var app = express();
 
-app.set('port', settings.port);
+if ('production' === env ) {
+  app.set('port', settings.prod_port);
+} else {
+  app.set('port', settings.port);
+}
 // use dev to get the nice colored styling for http requests
 app.use(express.static(path.join(__dirname, 'static')));
 
