@@ -4,7 +4,8 @@ var express = require('express'),
   http = require('http'),
   path = require('path'),
   settings = require('config'),
-  ui = require('./lib/routes/ui');
+  ui = require('./lib/routes/ui'),
+  es = require('./lib/routes/es');
 
 var env = process.env.NODE_ENV || 'development';
 var app = express();
@@ -18,6 +19,7 @@ if ('production' === env ) {
 app.use(express.static(path.join(__dirname, 'static')));
 
 app.use(express.logger('dev'));
+app.use(es.app);
 app.use(ui.app);
 
 http.createServer(app).listen(app.get('port'), function() {
