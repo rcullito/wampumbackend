@@ -5,6 +5,18 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
   
   grunt.initConfig({
+    express: {
+      options: {
+        port: process.env.PORT || 3000,
+        // Change this to '0.0.0.0' to access the server from outside.
+        hostname: 'localhost'
+      },
+      livereload: {
+        options: {
+          script: 'app.js',
+        }
+      },
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -14,6 +26,21 @@ module.exports = function(grunt) {
         'lib*',
         'test*',
       ]
+    },
+    watch: {
+      options: {
+        livereload: true,
+        nospawn: true, // without this option specified express won't be reloaded
+      },
+      livereload: {
+        files: [
+          'app.js',
+          'lib/**/*.{js,json}',
+          'static*',
+        ],
+        tasks: ['express:livereload'],
+      }
+
     },
     mochaTest: {
       test: {
@@ -35,4 +62,10 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'mochaTest',
   ]);
+
+  grunt.registerTask('server', [
+    'express:livereload',
+    'watch'
+  ]);
+
 };
