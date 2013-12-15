@@ -15,6 +15,7 @@
     "grunt-symlink": "~0.4.0",
     "grunt-git-clean": "~0.1.1",
     "supertest": "~0.8.1",
+    "superagent": "~0.15.7",
     "chai": "~1.8.1",
     "qs": "~0.6.5",
     "grunt-contrib-watch": "~0.5.3",
