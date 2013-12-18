@@ -17,7 +17,7 @@ if ('production' === env ) {
 }
 // use dev to get the nice colored styling for http requests
 app.use(express.static(path.join(__dirname, 'static')));
-
+app.use(express.bodyParser());
 app.use(express.logger('dev'));
 app.use(es.app);
 app.use(ui.app);
