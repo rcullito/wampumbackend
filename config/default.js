@@ -1,4 +1,6 @@
 module.exports = {
-  port: 3000,
-  prod_port: 80,
+  node_port: 3000,
+  node_port_prod: 80,
+  elasticsearch_port: 9300,
+  elasticsearch_port_prod: 9200,
 }
