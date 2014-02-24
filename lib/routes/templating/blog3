@@ -1,0 +1,34 @@
+h3 At Sea 1/12/14
+
+p The last month at Wampum has been a time of exploration trying to get the right tools in place. It has certainly been eclectic but overall I'm happy with the potential of where things are heading.
+
+p Ultimately, I think a big part of wampum's infrastructure will be a web crawler to go out and collect information from urls across the internet. For now I'm simplifying the problem of finding search results to, "assuming there is a ton of info both good and bad... how to go about sorting out the good stuff?" So the web crawler part can wait, as recently I've been concerned with machine learning to make smart use of the data I collect.
+
+p Before I dive into my take on machine learning, I'd like to compare the approach of this problem to fishing, and in doing so highlight some of the differences between tackling a programming problem, and a real world "physical problem".
+
+p Both fishing and compiling search results exist in the midst of vast, seemingly limitless expanses, the sea and the world wide web. The great thing about the ocean is that it is mysterious, and its depths are uncharted. We've all probably cast a line and come up with an old shoe or something, but you are aware when there is that distinct tug on the line, and you've caught a fish, even though it might be hours before it happened.
+
+p Contrast this with the current state of the web, our emails are inundated, our twitter notifications pile up, and the list of sites to bookmark and read grows ever longer. The problem is not finding a fish, but sorting out the fish from the oncoming digital tide.
+
+p To state it more clearly, what in the pelagic world is a problem of finding, is in the digital world an issue of sorting.
+
+p One of the cool things about programming, is that the most innovative tools  have a remarkable way of remaining open source and free. And this general availability of tools feels a bit like the excitement a fisherman must get when he loads up at a Bass Pro Shop with a $1,000 gift card. Here are two things, a method and a tool, I've been checking out that are absolutely free.
+
+p Machine Learning Intro Course, coursera.org
+
+p There is a very good machine learning course on Coursera by Andrew Ng. So far I've made it through some fun stuff such as logistic regression and neural networks, but still have about half of the course to go. Hopefully one or some of these tools will help pick out the good search results from the bad!
+
+p The process for Wampum might be something like:
+a.) Manually go through and choose 100 sites. 50 of them are great sites for Wampum search results, and have all the attributes that make them viable content, such as a mailing address, a description of how they will use the material, and a detailed list of their environmental practices.
+b.) Start to use those attributes of "the pages we know are right" to help predict whether a website that the web crawler finds is a good Wampum search result or not.
+
+
+p Cascalog cascalog.org
+
+p So I mentioned in my last post, I've been using elasticsearch to store my preliminary results so far. The benefits of having a search engine technology are great, but anytime you get flexibility in data, it seems like you sacrifice structure that is ultimately useful when you try and make sense of that data, or even just try and read that data back out again! This is where Cascalog comes in. It is a very powerful way of querying that is logic based, and is able to intelligently pull data based off a few high level specifications. One of the reasons I am interested in it is because, I have always had a strong interest in Clojure, despite never really using it relative to Javascript, which I write in just about every day. So I've been hacking around in ClojureScript and in addition to being a useful tool, it would be nice to come up with some open source stuff for ClojureScript as it is still a relatively young platform, and maybe even be able to use the same queries client and server side with Cascalog.
+
+
+p Suffice it to say I've bitten off more than I can chew for now. Setting reasonable goals was gladly left behind in 2013(as was rigorous grammatical editing for the blog), which reminds me, most importanlty of all, Happy New year all!
+
+
+p -Rob
