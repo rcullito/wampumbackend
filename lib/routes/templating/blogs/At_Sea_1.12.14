@@ -18,9 +18,7 @@ p Machine Learning Intro Course, coursera.org
 
 p There is a very good machine learning course on Coursera by Andrew Ng. So far I've made it through some fun stuff such as logistic regression and neural networks, but still have about half of the course to go. Hopefully one or some of these tools will help pick out the good search results from the bad!
 
-p The process for Wampum might be something like:
-a.) Manually go through and choose 100 sites. 50 of them are great sites for Wampum search results, and have all the attributes that make them viable content, such as a mailing address, a description of how they will use the material, and a detailed list of their environmental practices.
-b.) Start to use those attributes of "the pages we know are right" to help predict whether a website that the web crawler finds is a good Wampum search result or not.
+p The process for Wampum might be something like: A. Manually go through and choose 100 sites. 50 of them are great sites for Wampum search results, and have all the attributes that make them viable content, such as a mailing address, a description of how they will use the material, and a detailed list of their environmental practices. B. Start to use those attributes of "the pages we know are right" to help predict whether a website that the web crawler finds is a good Wampum search result or not.
 
 
 p Cascalog cascalog.org
