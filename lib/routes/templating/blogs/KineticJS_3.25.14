@@ -1,0 +1,30 @@
+h3 KineticJS 3/25/14
+
+p The last post touched on the need for motion in design, so I am pretty happy to report that the process of animating Wampum has been a really fun endeavor. I started out with a vague idea that it was important to show potential Wampum items moving because it would demonstrate that the life cycle of material goods is fluid, not static. I’m not sure if it will turn out this way, but I’ve always been fascinated with the idea of breaking materials down to their most basic parts and building them back up again like a series of blocks. My animation skills aren’t quite that fancy yet, but as a humble start having the items move in a circular motion is a first step towards a cradle to cradle view of product design. If you haven’t read the book, I would recommend it 1000 times over, it has definitely been one of the most influential books I’ve read relating to the environment, in spite of, or perhaps because it is not written but an environmentalist per say, but by an architect.http://www.mcdonough.com/speaking-writing/cradle-to-cradle/#.UzIb8nktulI
+
+p Warning, the rest of this blog post will probably not be of interest unless you are interested in animation with Javascript. If you only make it this far, it’s been real.
+
+p I’ve always thought the intersection of physics and animation was pretty cool since I first thought about how these two different worlds came together in pixar movies. A talk I went to a few years ago opened my mind to the world of infinite details that designers and programmers were responsible for creating, where gravity affected a waterfall in Cars, just as it would a stream cascading through the american southwest. Haven’t seen Cars 2 yet, but we’ll see.
+
+p Obviously, there are so many options for animation out there, but I’m already familiar with Javascript so I thought I would start there, or almost. I first looked at potentially recording a movie with something like Apple Motion. Aside from it maybe being a good intro to key framing and some other concepts, I found it kind of painstaking to get the effects that I wanted. All of the bezier curve tools and whatnot in photoshop and other animation projects have always eluded me, I’ve always thought it was easier to look at the underlying functions responsible for things moving on the screen. The Image Magick host of libraries was my first starting point, but in digging around it became pretty clear that if you’re doing animation in Javascript, focusing on the new html5 canvas element was the way to go. While there is some good documentation out there on programming directly with javascript and canvas, I wasn’t overly thrilled by the amount of boilerplate it took to produce something meaningful. After messing with DrawScript, a plugin for Adobe Illustrator, and Easel, a raw JS library for canvas, I finally settled on KineticJS, and have been really happy with the decision. 
+
+p Although there are some pretty good demos online for KineticJS, most of them are focused on drawing objects and not on animating them in interesting ways. My goal in posting some code samples is not to show off long forgotten and little understood Trig functions, but to potentially serve as a good copy and paste for anyone who just wants to move things around in cirlces or some other pattern with KineticJS. To Kinetic’s credit though, even though many of the animation tutorials one would expect are lacking, a lot of the patterns or pretty guessable. For instance, I was surpassed to find that grouping was very intuitive. You can group multiple shapes together to form an object, and you can group multiple objects together to form more complex objects. Attached is some code that I used to draw a yellow rain jacket(one object composed of five different shapes) and a pair of vans(two objects, each composed of three separate shapes each). If you’re interested in animation, even if you don’t know Javascript, I would say KineticJS is a great place to start. It’s free, all you need is a web browser to start, and you can share your designs really easily too.
+
+// include an image of the rainjacket pieces coming together to make the shape
+
+pre var yellowRainJacket = new Kinetic.Group({});
+    | var yellowRainJacketHood = new Kinetic.Shape({
+    |     sceneFunc: function(context) {
+    |         context.beginPath();          
+    |         context.moveTo(40, 50);
+    |         context.quadraticCurveTo(60, 10, 80, 50);
+    |         context.closePath();
+    |         context.fillStrokeShape(this);
+    |     },
+    |     fill: '#FBB917',
+    |     stroke: '#FFD801',
+    |     strokeWidth: 4
+    | });
+
+
+
