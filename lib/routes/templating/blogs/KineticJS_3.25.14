@@ -1,7 +1,5 @@
 h3 KineticJS 3/25/14
 
-img(src = '/ui/wampumfrontend/app/images/JacketPiecesFull.png')
-
 p The last post touched on the need for motion in design, so I am pretty happy to report that the process of animating Wampum has been a really fun endeavor. I started out with a vague idea that it was important to show potential Wampum items moving because it would demonstrate that the life cycle of material goods is fluid, not static. I’m not sure if it will turn out this way, but I’ve always been fascinated with the idea of breaking materials down to their most basic parts and building them back up again like a series of blocks. My animation skills aren’t quite that fancy yet, but as a humble start having the items move in a circular motion is a first step towards a cradle to cradle view of product design. If you haven’t read the book, I would recommend it 1000 times over, it has definitely been one of the most influential books I’ve read http://www.mcdonough.com/speaking-writing/cradle-to-cradle/#.UzIb8nktulI
 
 p Warning, the rest of this blog post will probably not be of interest unless you are interested in animation with Javascript. If you only make it this far, it’s been real.
