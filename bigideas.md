@@ -9,3 +9,10 @@ basically building and index for the first time of where secondhand and old prod
 // one advantage of sending to wampum could be that you organize everything in one package, and you know where it will be sent from there.
 // rather than sending multiple packages with jeans/earphones etc... and wasting a lot on packaging.
 // you have one order box from wampum that is returned to you, or you request one prior to sending your stuff out.
+
+Last time around I was working on a product that would only be of use if everyone was on it.
+Now my focus has been to build something that will work whether there is one person using it or 1,000. and am hoping to evolve it over time.
+
+
+// THIS PART IS REALLY FUCKING IMPORTANT
+Tell the story about the bin in my apartment on the about page.
