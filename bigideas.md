@@ -24,6 +24,9 @@ Tell the story about the bin in my apartment on the about page.
 
 same with jeans and headphones, we can see where it is going but before I click i would like to know how it is going to be used.
 
+look at airbnb search results, images could be very helpful here, but also slow down automation.
+the cloth mailbox logo for the denim site is nice.
+
 
 // Search Results
 
