@@ -17,15 +17,6 @@ Now my focus has been to build something that will work whether there is one per
 // THIS PART IS REALLY FUCKING IMPORTANT
 Tell the story about the bin in my apartment on the about page.
 
-// what do I want to know
-
-1. where is it going?
-2. how will it be used?
-
-same with jeans and headphones, we can see where it is going but before I click i would like to know how it is going to be used.
-
-look at airbnb search results, images could be very helpful here, but also slow down automation.
-the cloth mailbox logo for the denim site is nice.
 
 
 // Search Results
@@ -34,3 +25,5 @@ What would make searching easier?
 
 1. autocomplete!
 2. have enter automatically start search.
+3. highlight the word that was searched for.
+4. deep links.
