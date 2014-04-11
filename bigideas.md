@@ -17,6 +17,8 @@ Now my focus has been to build something that will work whether there is one per
 // THIS PART IS REALLY FUCKING IMPORTANT
 Tell the story about the bin in my apartment on the about page.
 
+http://www.npr.org/blogs/money/2013/12/10/247362140/the-afterlife-of-american-clothes
+
 
 
 // Search Results
@@ -25,5 +27,5 @@ What would make searching easier?
 
 1. autocomplete!
 2. have enter automatically start search.
-3. highlight the word that was searched for.
+3. highlight the word that was searched for. add a bluish grey background and white text.
 4. deep links.
