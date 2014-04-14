@@ -26,7 +26,8 @@ There are a lot of one time drives for niche items, such as umbrellas, but few o
 
 Many shelters have limimted storage space. or don't have the resources to provide free shipping like better world books does.
 
-
+Next Blog Post
+plastics recycling, limited inventory, free shipping by BW
 
 // Search Results
 
