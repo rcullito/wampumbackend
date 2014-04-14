@@ -6,6 +6,9 @@ start getting kibana screenshots as part of seattle application
 
 basically building and index for the first time of where secondhand and old products are being accumulated, and where they are being shipped to.
 
+
+include in application the ability to be in seattle and potentially partner with amazon shipment and fullfillment, etc...
+
 // one advantage of sending to wampum could be that you organize everything in one package, and you know where it will be sent from there.
 // rather than sending multiple packages with jeans/earphones etc... and wasting a lot on packaging.
 // you have one order box from wampum that is returned to you, or you request one prior to sending your stuff out.
@@ -19,13 +22,18 @@ Tell the story about the bin in my apartment on the about page.
 
 http://www.npr.org/blogs/money/2013/12/10/247362140/the-afterlife-of-american-clothes
 
+There are a lot of one time drives for niche items, such as umbrellas, but few organizations that consistently accep them. Wampum could have warehouse space that helps liquidate things in this area.
+
+Many shelters have limimted storage space. or don't have the resources to provide free shipping like better world books does.
+
 
 
 // Search Results
 
+// if there are no results, then ask if you know what your "blank is made out of"
+
 What would make searching easier?
 
-1. autocomplete!
+1. autocomplete! have this be a prefix of just the tagged fields.
 2. have enter automatically start search.
 3. highlight the word that was searched for. add a bluish grey background and white text.
-4. deep links.
