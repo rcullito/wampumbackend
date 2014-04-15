@@ -36,5 +36,6 @@ plastics recycling, limited inventory, free shipping by BW
 What would make searching easier?
 
 1. autocomplete! have this be a prefix of just the tagged fields.
-2. have enter automatically start search.
+2. get search button styling down.
 3. highlight the word that was searched for. add a bluish grey background and white text.
+4. have wampum link actually work going home and have animation work anytime we are on about/home
