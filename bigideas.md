@@ -37,7 +37,6 @@ What would make searching easier?
 
 1. autocomplete! have this be a prefix of just the tagged fields.
 2. if iphone size or extra small do a shorter width on the go button and no placeholder text.
-2.5 have y amplitude adjusted to screen width also(should be in general proportion to what will look good.)
 3. highlight the word that was searched for. add a bluish grey background and white text.
-4. have wampum link actually work going home and have animation work anytime we are on about/home
-5. look into a build process whereby we can automatically make a new iphone app version!
+4. look into a build process whereby we can automatically make a new iphone app version! also good for file organization around animation service.
+5 have y amplitude adjusted to screen width also(should be in general proportion to what will look good.)

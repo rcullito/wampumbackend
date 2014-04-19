@@ -40,7 +40,6 @@ module.exports = function(grunt) {
         ],
         tasks: ['express:livereload'],
       }
-
     },
     mochaTest: {
       test: {
