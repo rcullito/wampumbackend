@@ -36,7 +36,16 @@ plastics recycling, limited inventory, free shipping by BW
 What would make searching easier?
 
 1. autocomplete! have this be a prefix of just the tagged fields.
+still to do
+css stuff
+search on enter
+
+
+- worry about ordering of suggestions and searches in general once we have search data
+
 2. if iphone size or extra small do a shorter width on the go button and no placeholder text.
 3. highlight the word that was searched for. add a bluish grey background and white text.
 4. look into a build process whereby we can automatically make a new iphone app version! also good for file organization around animation service.
 5 have y amplitude adjusted to screen width also(should be in general proportion to what will look good.)
+6. return to event collection
+7. get kibana and marvel going
