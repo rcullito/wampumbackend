@@ -51,8 +51,8 @@ module.exports = function(grunt) {
     },
     symlink: {
       wampumfrontend: {
-        dest: 'static/ui/wampumfrontend/app',
-        relativeSrc: '../../../../wampumfrontend/app',
+        dest: 'static/ui/wampumfrontend/dist',
+        relativeSrc: '../../../../wampumfrontend/dist',
         options: {type: 'dir'}
       }
     }
