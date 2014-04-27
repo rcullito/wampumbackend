@@ -11,13 +11,9 @@ var express = require('express'),
 var env = process.env.NODE_ENV || 'development';
 var app = express();
 
-if ('production' === env ) {
-  app.set('node_port', settings.node_port_prod);
-  app.set('elasticsearch_port', settings.elasticsearch_port_prod);
-} else {
-  app.set('node_port', settings.node_port);
-  app.set('elasticsearch_port', settings.elasticsearch_port);
-}
+app.set('node_port', settings.node_port);
+app.set('elasticsearch_port', settings.elasticsearch_port);
+
 // use dev to get the nice colored styling for http requests
 app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.bodyParser());
