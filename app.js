@@ -8,6 +8,17 @@ var express = require('express'),
   blog = require('./lib/routes/templating/main'),
   es = require('./lib/routes/es');
 
+
+var opts = {
+  logstash: {
+    udp: true,         // or send directly over UDP
+    host: '127.0.0.1', // defaults to localhost
+    port: 9999, // defaults to 6379 for redis, 9999 for udp
+  }
+};
+
+var logger = require('bucker').createLogger(opts, module);
+
 var env = process.env.NODE_ENV || 'development';
 var app = express();
 
@@ -17,7 +28,7 @@ app.set('elasticsearch_port', settings.elasticsearch_port);
 // use dev to get the nice colored styling for http requests
 app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.bodyParser());
-app.use(express.logger());
+app.use(logger.middleware());
 app.use(es.app);
 app.use(blog.app);
 app.use(ui.app);
