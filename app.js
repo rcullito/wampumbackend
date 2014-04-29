@@ -17,7 +17,7 @@ app.set('elasticsearch_port', settings.elasticsearch_port);
 // use dev to get the nice colored styling for http requests
 app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.bodyParser());
-app.use(express.logger('dev'));
+app.use(express.logger());
 app.use(es.app);
 app.use(blog.app);
 app.use(ui.app);

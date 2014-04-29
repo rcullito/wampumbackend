@@ -1,4 +1,4 @@
 module.exports = {
   node_port: 3000,
-  elasticsearch_port: 9400,
+  elasticsearch_port: 9200,
 }
