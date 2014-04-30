@@ -9,15 +9,7 @@ var express = require('express'),
   es = require('./lib/routes/es');
 
 
-var opts = {
-  logstash: {
-    udp: true,         // or send directly over UDP
-    host: '127.0.0.1', // defaults to localhost
-    port: 9999, // defaults to 6379 for redis, 9999 for udp
-  }
-};
-
-var logger = require('bucker').createLogger(opts, module);
+var logger = require('bucker').createLogger(settings.logger_opts, module);
 
 var env = process.env.NODE_ENV || 'development';
 var app = express();
