@@ -21,19 +21,15 @@ To start up Logstash
 
     $ bin/logstash -f logstash-bucker.conf
 
-To set up tunnels to remote Elasticsearch
+To set up tunnels to remote Elasticsearch and Kibana
 
-    $ ssh -i acton.pem -N -L 9300:localhost:9200 ubuntu@54.204.7.85
+    $ grunt parallel
 
 To view cluster info with Elasticsearch Kopf
 
     http://localhost:9300/_plugin/kopf/
 
 Kibana Setup(make sure config.js port is set to 9300 to match tunnel port)
-Run this within the kibana repo out on the remote instance.
+Run this within the kibana repo out on the remote instance to send to the background
 
-    $ python -m SimpleHTTPServer 1234
-
-Run this locally to access kibana locally
-
-    $ ssh -i acton.pem -N -L 1234:localhost:1234 ubuntu@54.204.7.85
+    $ nohup python -m SimpleHTTPServer 1234 &
