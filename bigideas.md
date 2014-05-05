@@ -18,6 +18,8 @@ Perks.
 2. Really clear as to whether they accept items
 3. Customer support so that you can talk to someone.
 
+use notes from 5.2.14 to finish strong.
+
 Work being done
 
 // emailing specific organizations because information is not transparent on their site. 
