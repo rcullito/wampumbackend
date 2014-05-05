@@ -9,9 +9,39 @@ basically building and index for the first time of where secondhand and old prod
 
 include in application the ability to be in seattle and potentially partner with amazon shipment and fullfillment, etc...
 
+Thoughts
+
+A lot of big companies can affor their own well managed recyling programs. These seem to focus heavily on electronics. 
+
+Perks. 
+1. Pre paid mailing labels. 
+2. Really clear as to whether they accept items
+3. Customer support so that you can talk to someone.
+
+Work being done
+
+// emailing specific organizations because information is not transparent on their site. 
+
+what they accept, when they are open, is the organization even still around if the site was last updated in 2012??
+
+Issues
+
+car will match card and cartridge, etc...
+need to highlight which words matched the search result
+look into changing prefix query.
+
+
+include this appplication and note that in early prototyping electronics has been a big thing that people are searching for.
+http://www.purdue.edu/newsroom/releases/2012/Q4/new-tools-to-aid-in-recycling-flat-screen-monitors,-tvs.html
+
+include choice ted talk link. importan that there always be a TOP hit for what someone should do, just like there is a top result on Google, or netflix, or cheapest price on kayak.
+
 // one advantage of sending to wampum could be that you organize everything in one package, and you know where it will be sent from there.
 // rather than sending multiple packages with jeans/earphones etc... and wasting a lot on packaging.
 // you have one order box from wampum that is returned to you, or you request one prior to sending your stuff out.
+
+// problems with about.com or oprah, their revenue model is built around advertising. example
+http://www.oprah.com/home/Where-to-Get-Rid-of-Clothing-Toys-Old-Phones-and-More
 
 Last time around I was working on a product that would only be of use if everyone was on it.
 Now my focus has been to build something that will work whether there is one person using it or 1,000. and am hoping to evolve it over time.
