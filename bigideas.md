@@ -81,3 +81,84 @@ search on enter
 6. return to event collection
 7. get kibana and marvel going
 8. start tracking database versions in lothlorien or better yet start storing in s3, and hook up with transmit
+
+
+{
+    "query": {
+        "match": {
+            "_all": {
+            "query": "car",
+            "fuzziness": "1",
+            "prefix_length": 2
+        }
+    }
+}
+
+
+
+
+Upcoming blog post
+
+{
+    "query": {
+        "fuzzy": {
+            "_all": {
+                "value": "boots",
+                "fuzziness": 1,
+                "prefix_length": 2
+            }
+        }
+    }
+}
+
+matching for boots and books
+in a search for boots sherts, should match shirts and sheets.
+
+WORKING
+{
+    "query": {
+        "term": {
+            "_all": "car"
+        }
+    }
+}
+
+{
+    "query": {
+        "bool": {
+            "should": [
+                {
+                    "match": {
+                        "_all": "books"
+                    }
+                },
+                {
+                    "match": {
+                            "_all": {
+                            "query": "car",
+                            "fuzziness": "1",
+                            "prefix_length": 2
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
+
+
+
+{
+    "query": {
+        "term": {
+            "_all": "car"
+        },
+        "fuzzy": {
+            "_all": {
+                "value": "boots",
+                "fuzziness": 1,
+                "prefix_length": 2
+            }
+        }
+    }
+}
