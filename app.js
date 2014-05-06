@@ -5,7 +5,6 @@ var express = require('express'),
   path = require('path'),
   settings = require('config'),
   ui = require('./lib/routes/ui'),
-  blog = require('./lib/routes/templating/main'),
   es = require('./lib/routes/es');
 
 
@@ -22,7 +21,6 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.bodyParser());
 app.use(logger.middleware());
 app.use(es.app);
-app.use(blog.app);
 app.use(ui.app);
 
 http.createServer(app).listen(app.get('node_port'), function() {
