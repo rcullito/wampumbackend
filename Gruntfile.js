@@ -57,6 +57,11 @@ module.exports = function(grunt) {
         ]
       },
     },
+    shell: {
+      killTunnels: {
+        command: 'ps -ef | grep "ssh -i /Users/robertculliton/acton.pem -N -L" | grep -v "grep" | awk \'{print $2}\' | xargs kill -9'
+      }
+    },
     symlink: {
       wampumfrontend: {
         dest: 'static/ui/wampumfrontend/dist',

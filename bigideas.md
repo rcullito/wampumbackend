@@ -59,106 +59,15 @@ There are a lot of one time drives for niche items, such as umbrellas, but few o
 Many shelters have limimted storage space. or don't have the resources to provide free shipping like better world books does.
 
 Next Blog Post
-plastics recycling, limited inventory, free shipping by BW
+free shipping versus going to the website
+Where does Wampum fit in? 
+Talk about events modellign and logstash and kibana.
 
-// Search Results
 
-// if there are no results, then ask if you know what your "blank is made out of"
-
-What would make searching easier?
-
-1. autocomplete! have this be a prefix of just the tagged fields.
-still to do
-css stuff
-search on enter
-
-- worry about ordering of suggestions and searches in general once we have search data
 
 2. if iphone size or extra small do a shorter width on the go button and no placeholder text.
 3. highlight the word that was searched for. add a bluish grey background and white text.
 4. look into a build process whereby we can automatically make a new iphone app version! also good for file organization around animation service. have this push out code to the instace
 5 have y amplitude adjusted to screen width also(should be in general proportion to what will look good.)
 6. return to event collection
-7. get kibana and marvel going
-8. start tracking database versions in lothlorien or better yet start storing in s3, and hook up with transmit
-
-
-{
-    "query": {
-        "match": {
-            "_all": {
-            "query": "car",
-            "fuzziness": "1",
-            "prefix_length": 2
-        }
-    }
-}
-
-
-
-
-Upcoming blog post
-
-{
-    "query": {
-        "fuzzy": {
-            "_all": {
-                "value": "boots",
-                "fuzziness": 1,
-                "prefix_length": 2
-            }
-        }
-    }
-}
-
-matching for boots and books
-in a search for boots sherts, should match shirts and sheets.
-
-WORKING
-{
-    "query": {
-        "term": {
-            "_all": "car"
-        }
-    }
-}
-
-{
-    "query": {
-        "bool": {
-            "should": [
-                {
-                    "match": {
-                        "_all": "books"
-                    }
-                },
-                {
-                    "match": {
-                            "_all": {
-                            "query": "car",
-                            "fuzziness": "1",
-                            "prefix_length": 2
-                        }
-                    }
-                }
-            ]
-        }
-    }
-}
-
-
-
-{
-    "query": {
-        "term": {
-            "_all": "car"
-        },
-        "fuzzy": {
-            "_all": {
-                "value": "boots",
-                "fuzziness": 1,
-                "prefix_length": 2
-            }
-        }
-    }
-}
+7. marvel going
