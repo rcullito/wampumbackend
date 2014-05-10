@@ -3,6 +3,7 @@
 var express = require('express'),
   http = require('http'),
   path = require('path'),
+  redis = require('redis'),
   settings = require('config'),
   ui = require('./lib/routes/ui'),
   es = require('./lib/routes/es');
