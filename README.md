@@ -19,7 +19,7 @@ Port forwarding:
 
 To start up Logstash
 
-    $ bin/logstash -f logstash-bucker.conf
+    $ bin/logstash -f logstash-bucker-redis.conf
 
 To set up tunnels to remote Elasticsearch and Kibana
 
