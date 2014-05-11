@@ -10,5 +10,12 @@ module.exports = {
         list: true,
         key: 'bucker'
       }
-  }
+  },
+  redis: {
+    sessionstore: {
+      host: 'localhost',
+      port: 6379,
+      ttl: 172800,
+    },
+  },
 }
