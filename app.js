@@ -9,7 +9,7 @@ var express = require('express'),
   ui = require('./lib/routes/ui'),
   es = require('./lib/routes/es');
 
-
+require('winston-redis').Redis;
 
 var winstonStream = {
   write: function(message, encoding){
@@ -19,6 +19,12 @@ var winstonStream = {
 
 var env = process.env.NODE_ENV || 'development';
 var app = express();
+
+var redis_transport_options = {
+  channel:'creek'
+};
+
+winston.add(winston.transports.Redis, redis_transport_options)
 
 app.set('node_port', settings.node_port);
 app.set('elasticsearch_port', settings.elasticsearch_port);
