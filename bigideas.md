@@ -9,6 +9,20 @@ basically building and index for the first time of where secondhand and old prod
 
 include in application the ability to be in seattle and potentially partner with amazon shipment and fullfillment, etc...
 
+
+
+Video
+Show kibana screenshots
+show satisfied versus unsatisfied button.
+
+Iterating the product?
+
+Are comparisons important?
+Are reviews important?
+
+
+
+
 Thoughts
 
 A lot of big companies can affor their own well managed recyling programs. These seem to focus heavily on electronics. 
