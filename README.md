@@ -38,9 +38,13 @@ Run this within the kibana repo out on the remote instance to send to the backgr
 
     $ nohup python -m SimpleHTTPServer 1234 &
 
-To get consul going with the UI
+To get consul going with the UI locally
 
     $ consul agent -server -bootstrap -data-dir /tmp/consul -config-dir /etc/consul.d -ui-dir /Users/robertculliton/consul-ui
+
+To get consul going with the UI out on ubuntu
+
+consul agent -server -bootstrap -data-dir /tmp/consul -config-dir /etc/consul.d -ui-dir /home/ubuntu/consul-ui
 
 To navigate to the consul UI
 
