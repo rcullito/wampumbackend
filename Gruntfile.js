@@ -54,6 +54,7 @@ module.exports = function(grunt) {
         tasks: [
           { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '9300:localhost:9200', 'ubuntu@54.204.7.85']},
           { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '1234:localhost:1234', 'ubuntu@54.204.7.85']},
+          { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '8500:localhost:8500', 'ubuntu@54.204.7.85']},
         ]
       },
     },
@@ -78,6 +79,11 @@ module.exports = function(grunt) {
   grunt.registerTask('server', [
     'express:livereload',
     'watch'
+  ]);
+
+  grunt.registerTask('tunnels', [
+    'shell:killTunnels',
+    'parallel'
   ]);
 
 };
