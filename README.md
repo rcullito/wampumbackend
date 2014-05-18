@@ -37,3 +37,20 @@ Kibana Setup(make sure config.js port is set to 9300 to match tunnel port)
 Run this within the kibana repo out on the remote instance to send to the background
 
     $ nohup python -m SimpleHTTPServer 1234 &
+
+To get consul going with the UI
+
+    $ consul agent -server -bootstrap -data-dir /tmp/consul -config-dir /etc/consul.d -ui-dir /Users/robertculliton/consul-ui
+
+To navigate to the consul UI
+
+    http://localhost:8500/ui
+
+
+Start streaming service locally
+
+    $ node simpleRedisExample
+
+Start streaming service on ubuntu
+
+    $ sudo sv restart theriver
