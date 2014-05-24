@@ -8,7 +8,7 @@ var express = require('express'),
   ui = require('./lib/routes/ui'),
   es = require('./lib/routes/es');
 
-var logger = require('./public/bucker').createLogger(settings.logger_opts, module);
+var logger = require('./modified/bucker').createLogger(settings.logger_opts, module);
 
 var env = process.env.NODE_ENV || 'development';
 var app = express();
