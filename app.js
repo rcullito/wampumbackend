@@ -13,12 +13,6 @@ var logger = require('bucker').createLogger(settings.logger_opts, module);
 var env = process.env.NODE_ENV || 'development';
 var app = express();
 
-var redis_transport_options = {
-  channel:'concord'
-};
-
-winston.add(winston.transports.Redis, redis_transport_options)
-
 app.set('node_port', settings.node_port);
 app.set('elasticsearch_port', settings.elasticsearch_port);
 
