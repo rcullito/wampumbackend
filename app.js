@@ -8,7 +8,7 @@ var express = require('express'),
   ui = require('./lib/routes/ui'),
   es = require('./lib/routes/es');
 
-var logger = require('bucker').createLogger(settings.logger_opts, module);
+var logger = require('./public/bucker').createLogger(settings.logger_opts, module);
 
 var env = process.env.NODE_ENV || 'development';
 var app = express();
@@ -16,11 +16,11 @@ var app = express();
 app.set('node_port', settings.node_port);
 app.set('elasticsearch_port', settings.elasticsearch_port);
 
-// express.logger.token('cookie', function(req, res) { 
-//   return req.headers['cookie'];
-// })
+express.logger.token('cookie', function(req, res) { 
+  return req.headers['cookie'];
+})
 
-// express.logger.default = ':remote-addr - - [:date] ":method :url :cookie HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"'
+express.logger.default = ':remote-addr - - [:date] ":method :url :cookie HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"'
 
 var sessionOptions = {secret: 'claire'};
 
