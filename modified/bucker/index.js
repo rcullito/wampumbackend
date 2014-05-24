@@ -308,6 +308,9 @@ Bucker.prototype.middleware = function () {
             status: 0,
             response_time: Date.now(),
             sessionid : (function (cookie) {
+                if (!cookie) {
+                    return '';
+                }
                 var cookieBites = cookie.split(';');
                 var connectsid = cookieBites[0];
                 var cookieBits = connectsid.split('=');
