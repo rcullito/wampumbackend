@@ -3,8 +3,10 @@ module.exports = {
   elasticsearch_port: 9200,
   logger_opts: {
     logstash: {
-      udp: true,         // or send directly over UDP
+      redis: true,       // send as redis pubsub messages
       host: '127.0.0.1', // defaults to localhost
+      port: 6379,        // defaults to 6379 for redis
+      key: 'concord' // defaults to 'bucker', this is only used for the redis transport
     }
   },
   redis: {
