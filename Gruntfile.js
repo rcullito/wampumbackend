@@ -52,7 +52,7 @@ module.exports = function(grunt) {
     parallel: {
       tunnels: {
         tasks: [
-          { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '9300:localhost:9200', 'ubuntu@54.204.7.85']},
+          { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '4800:localhost:9200', 'ubuntu@54.204.7.85']},
           { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '1234:localhost:1234', 'ubuntu@54.204.7.85']},
           { cmd: 'ssh', args: ['-i', '/Users/robertculliton/acton.pem', '-N', '-L', '8500:localhost:8500', 'ubuntu@54.204.7.85']},
         ]
