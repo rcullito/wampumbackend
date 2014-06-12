@@ -3,6 +3,7 @@ module.exports = {
   elasticsearch: {
     host: 'http://ec2-54-196-63-82.compute-1.amazonaws.com',
     port: 9200,
+    size: 200,
   },
   logger_opts: {
     logstash: {
