@@ -1,6 +1,9 @@
 module.exports = {
   node_port: 3000,
-  elasticsearch_port: 9200,
+  elasticsearch: {
+    host: 'http://ec2-54-196-63-82.compute-1.amazonaws.com',
+    port: 9200,
+  },
   logger_opts: {
     logstash: {
       redis: true,       // send as redis pubsub messages
