@@ -6,6 +6,7 @@ var express = require('express'),
   redis = require('redis'),
   settings = require('config'),
   ui = require('./lib/routes/ui'),
+  auth = require('./lib/routes/auth'),
   es = require('./lib/routes/es');
 
 var logger = require('./modified/bucker').createLogger(settings.logger_opts, module);
@@ -39,6 +40,7 @@ app.use(express.bodyParser());
 app.use(logger.middleware());
 app.use(express.cookieParser());
 app.use(express.session(sessionOptions));
+app.use(auth.app);
 app.use(es.app);
 app.use(ui.app);
 
