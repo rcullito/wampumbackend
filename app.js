@@ -23,23 +23,11 @@ express.logger.token('cookie', function(req, res) {
 
 express.logger.default = ':remote-addr - - [:date] ":method :url :cookie HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"'
 
-var sessionOptions = {secret: 'claire'};
-
-var RedisStore = require('connect-redis')(express);
-var redisSessionStoreOptions = {
-  'host': settings.redis.sessionstore.host,
-  'port': settings.redis.sessionstore.port,
-  'ttl': settings.redis.sessionstore.ttl,
-};
-
-sessionOptions.store = new RedisStore(redisSessionStoreOptions);
-
-// use dev to get the nice colored styling for http requests
 app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.bodyParser());
 app.use(logger.middleware());
 app.use(express.cookieParser());
-app.use(express.session(sessionOptions));
+app.use(express.session({secret: 'claire'}));
 app.use(auth.app);
 app.use(es.app);
 app.use(ui.app);
