@@ -2,6 +2,7 @@ module.exports = {
   node_port: 3000,
   elasticsearch: {
     host: 'http://ec2-54-196-63-82.compute-1.amazonaws.com',
+    dev_host: 'localhost',
     port: 9200,
     size: 200,
   },

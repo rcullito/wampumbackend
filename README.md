@@ -1,3 +1,13 @@
+To start backend
+
+    locally run
+
+    $ NODE_ENV=dev grunt server
+
+    in production run
+
+    $ node app.js
+
 To get updated server side code
 
     $ git pull wampumbackend

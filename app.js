@@ -11,11 +11,10 @@ var express = require('express'),
 
 var logger = require('./modified/bucker').createLogger(settings.logger_opts, module);
 
-var env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV || 'prod';
 var app = express();
 
 app.set('node_port', settings.node_port);
-app.set('elasticsearch_port', settings.elasticsearch_port);
 
 express.logger.token('cookie', function(req, res) { 
   return req.headers['cookie'];
