@@ -7,6 +7,7 @@ var express = require('express'),
   settings = require('config'),
   ui = require('./lib/routes/ui'),
   auth = require('./lib/routes/auth'),
+  profile = require('./lib/routes/profile'),
   es = require('./lib/routes/es');
 
 var logger = require('./modified/bucker').createLogger(settings.logger_opts, module);
@@ -27,6 +28,7 @@ app.use(express.bodyParser());
 app.use(logger.middleware());
 app.use(express.cookieParser());
 app.use(express.session({secret: 'claire'}));
+app.use(profile.app);
 app.use(auth.app);
 app.use(es.app);
 app.use(ui.app);
