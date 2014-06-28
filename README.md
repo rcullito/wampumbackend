@@ -2,7 +2,7 @@ To start backend
 
     locally run
 
-    $ NODE_ENV=dev grunt server
+    $ gulp
 
     in production run
 

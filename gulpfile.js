@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   shell = require('gulp-shell');
 
 
-gulp.task('default', function () {
+gulp.task('server', function () {
   nodemon({
     script: 'app.js',
     ext: 'html js',
@@ -13,6 +13,9 @@ gulp.task('default', function () {
     console.log('express server restarted');
   });
 });
+
+gulp.task('default', ['server']);
+
 
 // old grunt symlink configuration
 // symlink: {
