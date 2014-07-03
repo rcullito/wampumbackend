@@ -15,13 +15,3 @@ gulp.task('server', function () {
 });
 
 gulp.task('default', ['server']);
-
-
-// old grunt symlink configuration
-// symlink: {
-//   wampumfrontend: {
-//     dest: 'static/ui/wampumfrontend/dist',
-//     relativeSrc: '../../../../wampumfrontend/dist',
-//     options: {type: 'dir'}
-//   }
-// }
