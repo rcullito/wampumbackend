@@ -7,7 +7,7 @@ gulp.task('server', function () {
   nodemon({
     script: 'app.js',
     ext: 'html js',
-    env: { 'NODE_ENV': 'dev' }
+    // env: { 'NODE_ENV': 'dev' }
   })
   .on('restart', function () {
     console.log('express server restarted');
