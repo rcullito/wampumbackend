@@ -1,8 +1,0 @@
-Note to self
-
-to get config working properly, require it from the top level of the express app
-when using the node repl.
-
-NODE_ENV = 'dev';
-var auth = require('./lib/routes/auth');
-auth.userExists('rob.culliton@gmail.com', function (err, res) { console.log(res) });
