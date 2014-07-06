@@ -6,7 +6,6 @@ var express = require('express'),
   redis = require('redis'),
   settings = require('config'),
   ui = require('./lib/routes/ui'),
-  auth = require('./lib/routes/auth'),
   profile = require('./lib/routes/profile'),
   es = require('./lib/routes/es');
 
@@ -29,7 +28,6 @@ app.use(logger.middleware());
 app.use(express.cookieParser());
 app.use(express.session({secret: 'claire'}));
 app.use(profile.app);
-app.use(auth.app);
 app.use(es.app);
 app.use(ui.app);
 
