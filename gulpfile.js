@@ -14,6 +14,9 @@ gulp.task('server', function () {
   });
 });
 
+
+// split this into a build backend task
+// and a build frontend task
 gulp.task('build', function () {
   return gulp.src(['./*', '!./node_modules/**', '!./node_modules/'])
     .pipe(gulp.dest('../build'));
