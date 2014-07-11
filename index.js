@@ -6,7 +6,8 @@ var location = require('./lib/hapiroutes/location'),
   ui = require('./lib/hapiroutes/ui'),
   tags = require('./lib/hapiroutes/tags');
 
-var server = new Hapi.Server(3000, "localhost");
+
+var server = new Hapi.Server(8888);
 
 server.route(location.route);
 server.route(search.route);
