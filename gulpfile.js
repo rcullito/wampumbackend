@@ -10,20 +10,11 @@ gulp.task('server', function () {
     // env: { 'NODE_ENV': 'dev' }
   })
   .on('restart', function () {
-    console.log('express server restarted');
+    console.log('server restarted');
   });
 });
 
-
-gulp.task('hapiserver', function () {
-  nodemon({
-    script: 'index.js',
-    ext: 'html js',
-    env: { 'NODE_ENV': 'dev' }
-  })
-  .on('restart', function () {
-    console.log('hapi server restarted');
-  });
+gulp.task('build', function () {
+  return gulp.src(['./*', '!./node_modules/**', '!./node_modules/'])
+    .pipe(gulp.dest('../build'));
 });
-
-gulp.task('default', ['server']);
