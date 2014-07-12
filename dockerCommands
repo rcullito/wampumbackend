@@ -1,0 +1,14 @@
+To build the container
+
+docker build -t rcullito/wampum10 .
+
+
+To run the container
+
+docker run -d -p 80:8888 rcullito/wampum10
+
+
+To push the container
+
+docker push rcullito/wampum10
+
