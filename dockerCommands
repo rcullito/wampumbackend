@@ -12,3 +12,18 @@ To push the container
 
 docker push rcullito/wampum10
 
+
+Elasticsearch stuff
+
+docker run -d -p 9200:9200 -p 9300:9300 dockerfile/elasticsearch
+
+BUT NOW WE
+
+docker run -t -i rcullito/elasticsearchv1 /elasticsearch/bin/elasticsearch
+
+container id
+1e5a7aedfdd3
+
+./elasticsearch/bin/plugin --install lmenezes/elasticsearch-kopf/1.2.3
+
+
