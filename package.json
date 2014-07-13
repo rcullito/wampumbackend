@@ -8,7 +8,8 @@
     "elasticsearch": "~2.2.0",
     "hapi": "~6.0.2",
     "joi": "~4.6.1",
-    "good": "~2.1.2"
+    "good": "~2.1.2",
+    "tv": "~2.0.0"
   },
   "devDependencies": {
     "gulp": "~3.8.3",

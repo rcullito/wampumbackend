@@ -1,5 +1,6 @@
 var Hapi = require("hapi"),
   Good = require('good'),
+  Tv = require('tv'),
   Joi = require("joi");
 
 
@@ -21,8 +22,14 @@ if (!module.parent) {
     }
   };
 
+  var tvOptions = {
+    endpoint: '/debug/console',
+    queryKey: 'debug'
+  };
+
   var plugins = [
-    {plugin: Good, options: goodOptions}
+    {plugin: Good, options: goodOptions},
+    {plugin: Tv, options: tvOptions},
   ];
 
   server.route(location.route);
