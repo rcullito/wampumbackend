@@ -13,6 +13,7 @@ if (!module.parent) {
   var location = require('./lib/hapiroutes/location'),
     search = require('./lib/hapiroutes/search'),
     ui = require('./lib/hapiroutes/ui'),
+    orders = require('./lib/hapiroutes/orders'),
     tags = require('./lib/hapiroutes/tags');  
 
   var goodOptions = {
@@ -35,6 +36,7 @@ if (!module.parent) {
   server.route(location.route);
   server.route(search.route);
   server.route(tags.route);
+  server.route(orders.route);
   server.route(ui.routes);
 
   server.pack.register(plugins, function (err) {
