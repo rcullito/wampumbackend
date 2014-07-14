@@ -19,7 +19,8 @@ if (!module.parent) {
   var goodOptions = {
     extendedRequests: true,
     subscribers: {
-        'console': ['request', 'log', 'error'],
+      'console': ['request', 'log', 'error'],
+      './logs/': ['request', 'log', 'error']
     }
   };
 
