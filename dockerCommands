@@ -3,9 +3,9 @@ To build the container
 docker build -t rcullito/wampum10 .
 
 
-To run the container
+To run the web portion
 
-docker run -d -p 80:8888 rcullito/wampum10
+docker run -d -p 80:8888 rcullito/wampum11
 
 
 To push the container
@@ -19,14 +19,13 @@ docker run -d -p 9200:9200 -p 9300:9300 dockerfile/elasticsearch
 
 BUT NOW WE
 
-docker run -t -i rcullito/elasticsearchv4 /elasticsearch/bin/elasticsearch
-
-docker run -d -p 9200:9200 -p 9300:9300 rcullito/elasticsearchv4 /elasticsearch/bin/elasticsearch
-
 docker run -d -p 9200:9200 -p 9300:9300 rcullito/elasticsearch5 /elasticsearch/bin/elasticsearch
 
-container id
-1e5a7aedfdd3
+
+to interactively work on es container
+
+docker run -t -i rcullito/elasticsearchv4 /elasticsearch/bin/elasticsearch
+
 
 ./elasticsearch/bin/plugin --install lmenezes/elasticsearch-kopf/1.2.3
 
