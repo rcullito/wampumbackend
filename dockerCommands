@@ -1,16 +1,20 @@
 To build the container
 
-docker build -t rcullito/wampum10 .
+docker build -t rcullito/wampum11 .
 
 
 To run the web portion
 
-docker run -d -p 80:8888 rcullito/wampum11
+docker run -d -p 80:8888 rcullito/wampum13
+
+to work on the image
+
+docker run -i -t rcullito/wampum13 /bin/bash
 
 
-To push the container
+To push the image
 
-docker push rcullito/wampum10
+docker push rcullito/wampum13
 
 
 Elasticsearch stuff
@@ -22,11 +26,15 @@ BUT NOW WE
 docker run -d -p 9200:9200 -p 9300:9300 rcullito/elasticsearch5 /elasticsearch/bin/elasticsearch
 
 
-to interactively work on es container
+to interactively run an es image
 
 docker run -t -i rcullito/elasticsearchv4 /elasticsearch/bin/elasticsearch
 
 
 ./elasticsearch/bin/plugin --install lmenezes/elasticsearch-kopf/1.2.3
+
+To get nodejs container logs on ubuntu filesystem
+
+sudo docker cp e944f25a6cac:/usr/src/app/logs .
 
 
