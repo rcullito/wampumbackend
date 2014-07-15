@@ -5,7 +5,7 @@ docker build -t rcullito/wampum11 .
 
 To run the web portion
 
-docker run -d -p 80:8888 rcullito/wampum13
+docker run -d -p 80:8888 rcullito/wampum11
 
 to work on the image
 
