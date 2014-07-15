@@ -36,7 +36,7 @@ if (!module.parent) {
 
   server.route(location.route);
   server.route(search.route);
-  server.route(tags.route);
+  server.route(tags.routes);
   server.route(orders.route);
   server.route(ui.routes);
 
