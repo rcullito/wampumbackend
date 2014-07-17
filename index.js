@@ -16,6 +16,7 @@ if (!module.parent) {
     orders = require('./lib/hapiroutes/orders'),
     tags = require('./lib/hapiroutes/tags');  
 
+
   var goodOptions = {
     extendedRequests: true,
     subscribers: {
@@ -39,6 +40,13 @@ if (!module.parent) {
   server.route(tags.routes);
   server.route(orders.route);
   server.route(ui.routes);
+
+  // we want to know about the event, and whether it is legitimate, which we can do from the ua
+  server.on("request", function(request, event, tags) {
+    if (tags.cavaliers) {
+      console.log(event.data);
+    }
+  });
 
   server.pack.register(plugins, function (err) {
     server.start(function() {
