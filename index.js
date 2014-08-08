@@ -19,7 +19,7 @@ if (!module.parent) {
     extendedRequests: true,
     subscribers: {
       'console': ['request', 'log', 'error'],
-      './logs/': ['request', 'log', 'error']
+      // './logs/': ['request', 'log', 'error']
     }
   };
 
