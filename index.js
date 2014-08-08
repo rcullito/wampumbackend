@@ -10,11 +10,8 @@ module.exports = server;
 
 if (!module.parent) {
 
-  var location = require('./lib/hapiroutes/location'),
-    search = require('./lib/hapiroutes/search'),
-    ui = require('./lib/hapiroutes/ui'),
-    orders = require('./lib/hapiroutes/orders'),
-    tags = require('./lib/hapiroutes/tags');  
+  var ui = require('./lib/hapiroutes/ui'),
+    begin = require('./lib/hapiroutes/begin');  
 
 
   var goodOptions = {
@@ -35,10 +32,7 @@ if (!module.parent) {
     {plugin: Tv, options: tvOptions},
   ];
 
-  server.route(location.route);
-  server.route(search.route);
-  server.route(tags.routes);
-  server.route(orders.route);
+  server.route(begin.route);
   server.route(ui.routes);
 
   // we want to know about the event, and whether it is legitimate, which we can do from the ua
