@@ -11,7 +11,8 @@ module.exports = server;
 if (!module.parent) {
 
   var ui = require('./lib/hapiroutes/ui'),
-    begin = require('./lib/hapiroutes/begin');  
+    begin = require('./lib/hapiroutes/begin'),
+    submit = require('./lib/hapiroutes/submit')  
 
 
   var goodOptions = {
@@ -33,9 +34,9 @@ if (!module.parent) {
   ];
 
   server.route(begin.route);
+  server.route(submit.route);
   server.route(ui.routes);
 
-  // we want to know about the event, and whether it is legitimate, which we can do from the ua
   server.on("request", function(request, event, tags) {
     if (tags.cavaliers) {
       console.log(event.data);
