@@ -1,1 +1,4 @@
-?pattern - when it begins with a question mark, will search the file for a pattern.
+?pattern - when it begins with a question mark, will search the file backwards for a pattern
+
+-S disables line wrap
+-M shows more detailed prompt, including file position
