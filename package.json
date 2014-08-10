@@ -16,13 +16,7 @@
     "gulp-nodemon": "~1.0.4",
     "gulp-if": "~1.2.1",
     "gulp-shell": "~0.2.7",
-    "mocha": "1.14.0",
-    "nock": "0.22.1",
-    "moment": "~2.1.0",
-    "supertest": "~0.8.1",
-    "superagent": "~0.15.7",
-    "chai": "~1.8.1",
-    "qs": "~0.6.5"
+    "moment": "~2.1.0"
   },
   "scripts": {
     "test": "grunt mochaTest"

@@ -1,3 +1,10 @@
+First get everything ready for docker by running 
+
+gulp build
+
+within wampumbackend
+
+
 To build the container
 
 docker build -t rcullito/wampum11 .
