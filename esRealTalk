@@ -1,0 +1,16 @@
+{
+    "filter": {
+        "missing": {
+            "field": "postageshipped"
+        }
+    }
+}
+
+
+{
+    "filter": {
+        "missing": {
+            "field": "giftcardshipped"
+        }
+    }
+}
