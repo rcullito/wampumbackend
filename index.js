@@ -12,6 +12,7 @@ if (!module.parent) {
 
   var ui = require('./lib/hapiroutes/ui'),
     begin = require('./lib/hapiroutes/begin'),
+    search = require('./lib/hapiroutes/search'),
     locations = require('./lib/hapiroutes/locations'),
     submit = require('./lib/hapiroutes/submit')  
 
@@ -35,6 +36,7 @@ if (!module.parent) {
   ];
 
   server.route(begin.route);
+  server.route(search.route);
   server.route(locations.route);
   server.route(submit.route);
   server.route(ui.routes);
