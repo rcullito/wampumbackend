@@ -21,7 +21,7 @@ docker run -i -t rcullito/wampum13 /bin/bash
 
 To push the image
 
-docker push rcullito/wampum13
+docker push rcullito/wampum11
 
 
 Elasticsearch stuff
